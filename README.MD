@@ -152,23 +152,24 @@ npm run dev
 
 ---
 
+
 ## 🔐 Environment Variables
 
-Create a `.env` file inside the `server` directory and add the required environment variables.
-
-Example:
+Create a `.env` file inside the `server` directory and configure the following environment variables:
 
 ```env
 PORT=5000
 
-MONGODB_URI=your_mongodb_connection_string
+MONGODB_URI=<your_mongodb_connection_string>
 
-JWT_SECRET=your_jwt_secret
+JWT_SECRET=<your_jwt_secret>
 
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
+CLOUDINARY_CLOUD_NAME=<your_cloud_name>
+CLOUDINARY_API_KEY=<your_cloudinary_api_key>
+CLOUDINARY_API_SECRET=<your_cloudinary_api_secret>
 ```
+
+> **Note:** Never commit your `.env` file or expose sensitive credentials. Ensure `.env` is included in your `.gitignore`.
 
 ---
 
