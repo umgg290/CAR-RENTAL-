@@ -2,8 +2,7 @@
  
 A full-stack Car Rental System built using the MERN stack that allows users to browse available cars, make bookings, and manage reservations. The application also includes an owner panel for listing cars and managing bookings.
  
-**Live Demo:** _add your deployed link here_
-**Repo:** _add your GitHub repo URL here_
+
  
 ---
  
@@ -210,14 +209,7 @@ All protected routes require the JWT in the `Authorization` header (raw token, n
 - **Date-range overlap check** for booking availability: a car is unavailable if any existing booking's range overlaps the requested pickup/return window.
 ---
  
-## ⚠️ Known Limitations / Future Improvements
- 
-- JWTs are not set to expire (`expiresIn` is not configured) — a valid token remains usable indefinitely.
-- `deleteCar` is a soft delete (owner is unset, availability set to false); the car document isn't actually removed.
-- No request-body validation library (e.g. Zod/Joi) — validation is manual and minimal.
-- No automated tests yet.
-- Planned: online payment integration, email notifications, car reviews/ratings, wishlist, booking cancellation with refund policy, real-time availability updates.
----
+
  
 ## 👨‍💻 Author
  
